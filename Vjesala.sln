@@ -3,7 +3,25 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vjesala", "Vjesala\Vjesala.csproj", "{9CEDBCBB-F752-40CE-9517-0890E566EF14}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Testovi", "Testovi\Testovi.csproj", "{1A81DC26-0795-41FD-A87C-617F6838562C}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9CEDBCBB-F752-40CE-9517-0890E566EF14}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9CEDBCBB-F752-40CE-9517-0890E566EF14}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9CEDBCBB-F752-40CE-9517-0890E566EF14}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9CEDBCBB-F752-40CE-9517-0890E566EF14}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A81DC26-0795-41FD-A87C-617F6838562C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A81DC26-0795-41FD-A87C-617F6838562C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A81DC26-0795-41FD-A87C-617F6838562C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A81DC26-0795-41FD-A87C-617F6838562C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
