@@ -30,11 +30,19 @@ namespace IgraVjesala
             return string.Compare(riječ, pojam, true) == 0;
         }
 
-        public string Prikaz()
+        public  string Prikaz()
         {
-            Console.WriteLine(zaPrikaz.ToString());
+           
             return zaPrikaz.ToString();
         }
+
+        public StringBuilder VratiRijecZaPrikaz
+        {
+            get { return zaPrikaz; }
+        }
+
+
+
         public const char ZnakZaNeotkrivenaSlova = '-';
         public StringBuilder zaPrikaz;
         public string pojam;
