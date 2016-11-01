@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vjesala", "Vjesala\Vjesala.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Testovi", "Testovi\Testovi.csproj", "{1A81DC26-0795-41FD-A87C-617F6838562C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KonzolnaIgraVješala", "KonzolnaIgraVješala.cs\KonzolnaIgraVješala.csproj", "{44718DA0-DF2F-411C-9FCE-A9EF4C8CF03B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{1A81DC26-0795-41FD-A87C-617F6838562C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1A81DC26-0795-41FD-A87C-617F6838562C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1A81DC26-0795-41FD-A87C-617F6838562C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44718DA0-DF2F-411C-9FCE-A9EF4C8CF03B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44718DA0-DF2F-411C-9FCE-A9EF4C8CF03B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44718DA0-DF2F-411C-9FCE-A9EF4C8CF03B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44718DA0-DF2F-411C-9FCE-A9EF4C8CF03B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

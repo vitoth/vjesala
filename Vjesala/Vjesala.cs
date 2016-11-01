@@ -21,6 +21,11 @@ namespace IgraVjesala
             get { return tijelo; }
         }
 
-        const int DijelovaTijela = 6;
+        public virtual void PrikažiSe()
+        {
+            Console.WriteLine(tijelo);
+        }
+
+        public const int DijelovaTijela = 6;
     }
 }

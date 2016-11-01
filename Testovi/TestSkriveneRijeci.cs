@@ -13,6 +13,15 @@ namespace IgraVjesala
             Assert.IsTrue(rijec.ImasLiSlovo('a'));
         }
 
+
+        [TestMethod]
+        public void ImasLiSlovoVraćaTrueZaSlovoKojeJeURiječiBezObziraVelikoMalo()
+        {
+            SkrivenaRijec rijec = new SkrivenaRijec("mama");
+            Assert.IsTrue(rijec.ImasLiSlovo('A'));
+        }
+
+
         [TestMethod]
         public void ImasLiSlovoVraćaFalseZaSlovoKojeNijeURiječi()
         {
@@ -24,7 +33,8 @@ namespace IgraVjesala
         public void NaPočetkuSkrivenaRiječPrikazujeSamoPodcrtavanje()
         {
             SkrivenaRijec rijec = new SkrivenaRijec("mama");
-            Assert.AreEqual("____", rijec.Prikaz());
+            string očekivani = string.Format("{0}{0}{0}{0}", SkrivenaRijec.ZnakZaNeotkrivenaSlova);
+            Assert.AreEqual(očekivani, rijec.Prikaz());
         }
 
         [TestMethod]
@@ -32,7 +42,8 @@ namespace IgraVjesala
         {
             SkrivenaRijec rijec = new SkrivenaRijec("mama");
             rijec.ImasLiSlovo('a');
-            Assert.AreEqual("_a_a", rijec.Prikaz());
+            string očekivani = string.Format("{0}A{0}A", SkrivenaRijec.ZnakZaNeotkrivenaSlova);
+            Assert.AreEqual(očekivani, rijec.Prikaz());
         }
 
         [TestMethod]
@@ -40,7 +51,29 @@ namespace IgraVjesala
         {
             SkrivenaRijec rijec = new SkrivenaRijec("mama");
             rijec.ImasLiSlovo('t');
-            Assert.AreEqual("____", rijec.Prikaz());
+            string očekivani = string.Format("{0}{0}{0}{0}", SkrivenaRijec.ZnakZaNeotkrivenaSlova);
+            Assert.AreEqual(očekivani, rijec.Prikaz());
+        }
+
+        [TestMethod]
+        public void PokušajOtkrivanjaCijeleRiječiVraćaTrueZaPravuRiječ()
+        {
+            SkrivenaRijec rijec = new SkrivenaRijec("mama");
+            Assert.IsTrue(rijec.JesiLi("mama"));
+        }
+
+        [TestMethod]
+        public void PokušajOtkrivanjaCijeleRiječiVraćaTrueZaPravuRiječBezObziraVelikoMalo()
+        {
+            SkrivenaRijec rijec = new SkrivenaRijec("mama");
+            Assert.IsTrue(rijec.JesiLi("MAma"));
+        }
+
+        [TestMethod]
+        public void PokušajOtkrivanjaCijeleRiječiVraćaFalseZaKrivuRiječ()
+        {
+            SkrivenaRijec rijec = new SkrivenaRijec("mama");
+            Assert.IsFalse(rijec.JesiLi("mata"));
         }
     }
 }
