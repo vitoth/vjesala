@@ -46,6 +46,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
     <ProjectReference Include="..\Vjesala\Vjesala.csproj">
       <Project>{9cedbcbb-f752-40ce-9517-0890e566ef14}</Project>
       <Name>Vjesala</Name>

@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using IgraVjesala;
 
-namespace IgraVjesala
+namespace KonzolnaIgraVješala
 {
     class Program
     {

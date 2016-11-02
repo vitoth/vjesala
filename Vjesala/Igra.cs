@@ -38,15 +38,9 @@ namespace IgraVjesala
             get { return vješala.NaVjesalima == Vjesala.DijelovaTijela; }
         }
 
-        public Vjesala Vješala
-        {
-            get { return vješala; }
-        }
-
-
-        public SkrivenaRijec skrivenaRiječ;
+        private SkrivenaRijec skrivenaRiječ;
         private Vjesala vješala = new Vjesala();
 
-        private string[] fondRiječi = {  "sunce", "auto", "vjetar","otorinolaringologija", "morski pas", "riječ" };
+        private string[] fondRiječi = { "mama", "tata", "sunce", "auto" };
     }
 }
